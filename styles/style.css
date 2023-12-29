@@ -194,8 +194,10 @@ p{
   padding-top:10px;
   border-radius: 5px;
   color:white;
+  box-sizing: border-box;
   transition: 0.5s; 
 }
+
 .food-col:hover{
   transform: scale(0.98);
 }
@@ -237,28 +239,40 @@ p{
 .butter{
   background-image: url('/images/okutuka.jpg');
   background-position: relative;
-    background-size: cover;
-    background-origin: initial;
+  background-size: cover;
+  background-origin: initial;
+  object-fit: cover;
 }
 .meat {
   background-image: url('/images/pap+stew.jpg');
   background-position: relative;
-    background-size: cover;
-    background-origin: initial;
+  background-size: cover;
+  background-origin: initial;
+  object-fit: cover;
 }
 .sour-milk{
   background-image: url('/images/okukanda.jpg');
   background-position: relative;
   background-size:cover;
   background-origin: initial;
+  object-fit: cover;
 
 }
 
-@media(max-width:900px){
+@media (max-width:450px){
   .food-row {
-    grid-template-columns:1fr;
-    overflow: hidden;
+    display:flex;
+    flex-direction: column;
 }
+}
+
+@media screen and (max-width:900px){
+  .food-row{
+    grid-template-columns:1fr 1fr;
+    overflow: hidden;
+  }
+
+
 }
 
 
