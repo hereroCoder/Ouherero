@@ -7,8 +7,11 @@
   <meta name="description" content="Teachs about the Ovaherero people culture and traditions. Ovaherero is an indigenous tribe in Namibia,Botswana, and Angola"/>
   <title>OvaHerero</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="./images/ovaherero-favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="/scripts/main.js" defer></script>
 </head>
 <body>
@@ -16,13 +19,15 @@
  <header>
   <!-- logo -->
   <div class="logo-name">
-    <img src="/images/logo.png" alt="company-logo" width="50px">
+    <a href="#"><img src="/images/logo.png" alt="company-logo" width="50px"></a>
     <!-- navigation -->
     <p>OvaHerero</p>
   </div>
  
   <nav>
+      <i class="fa fa-times" onclick="closeMenu()"></i>
     <ul>
+      <li><a href="">Home</a></li>
       <li><a href="">History</a></li>
       <li><a href="">Food</a></li>
       <li><a href="">Attire</a></li>
@@ -30,6 +35,9 @@
       <li><a href="">Language</a></li>
     </ul>
   </nav>
+
+  <i class="fa fa-bars" onclick="openMenu()"></i>
+  
  </header>
 
 <!-- main -->

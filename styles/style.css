@@ -1,18 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 html{
   background-image: url('/images/kraaal.jpeg');
-  background-position:fixed;
+  /* background-position:inherit; */
   background-repeat: no-repeat;
-  background-origin: center;
   background-size:cover;
-  object-fit: contain;
-  min-height: 100vh;
-}
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  /* object-fit: contain; */
+  /* min-height: 100vh; */
 }
 
 header{
@@ -21,7 +20,7 @@ header{
   align-items: center;
   background: black;
   opacity: 0.6;
-  padding:10px 5%;
+  padding:0.5% 5%;
   color: white;
   position: fixed;
   top:0;
@@ -31,8 +30,10 @@ header{
 }
 
 header ul{
+  flex:1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul li{
@@ -44,7 +45,12 @@ nav ul li a{
   text-decoration: none;
   color: white;
   font-size: 17px;
+  transition:0.2s;
  
+}
+
+nav ul li a:hover{
+  border-bottom: solid 2px #f86836;
 }
 
 .logo-name{
@@ -58,6 +64,10 @@ nav ul li a{
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 20px;
+}
+
+header .fa{
+  display:none;
 }
 
 .hero {
@@ -81,8 +91,6 @@ nav ul li a{
 }
 
 .hero h1:hover{
-  /* -webkit-text-stroke:2px white;
-  color:transparent; */
   letter-spacing: 1px;
 }
 
@@ -98,22 +106,40 @@ nav ul li a{
   height:100vh;
 }
 
-/* @media(min-aspect-ration:16/9){
-  .hero-video{
-    width:100%;
-    height: auto;
+@media(max-width:900px){
+  .hero h1 {
+      font-size: 30px;}
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    gap:20px;
+    
   }
-}
 
-@media(max-aspect-ration:16/9) {
-  .hero-video {
-    width: auto;
-    height: 100%;
+  header .fa{
+      display:block;
+      cursor: pointer;
+      transition: 0.5s;
+      margin:20px;
+    }
+  header .fa:hover{
+      font-weight: bold;
+      font-size:20px;
   }
-} */
 
-.hero-content{
-
+  nav{
+    position: absolute;
+    background-color:black;
+    height: 100vh;
+    color: white;
+    width:200px;
+    top:0;
+    right:-200px;
+    z-index: 2;
+  }
 }
 
 .section{
