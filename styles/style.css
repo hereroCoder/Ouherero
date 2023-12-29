@@ -5,15 +5,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html{
+/* html{
   background-image: url('/images/kraaal.jpeg');
   /* background-position:inherit; */
-  background-repeat: no-repeat;
-  background-size:cover;
+  /* background-repeat: no-repeat;
+  background-size:cover; */
   /* object-fit: contain; */
   /* min-height: 100vh; */
-}
+/* } */ 
 
+/* header and hero */
 header{
   display: flex;
   justify-content: space-between;
@@ -58,12 +59,14 @@ nav ul li a:hover{
   justify-content: space-between;
   align-items: center;
   gap:6px;
+ 
 }
 
 .logo-name p{
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 20px;
+  color: white;
 }
 
 header .fa{
@@ -81,23 +84,27 @@ header .fa{
   justify-content: center;
   align-items:center;
   text-align: center;
+  color: white;
 }
 
 .hero h1{
-  color:white;
   font-weight: 600;
   font-size: 80px;
   transition: 0.5s;
 }
 
 .hero h1:hover{
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-.hero p{
+.hero p, .hero .fa{
   margin-top:20px;
-  color: white;
+  font-size: 17px;
+  color:white;
+
+
 }
+
 .hero-video{
   position: absolute;
   width: 100%;
@@ -139,11 +146,33 @@ header .fa{
     top:0;
     right:-200px;
     z-index: 2;
+    transition:1s;
   }
 }
 
-.section{
- 
+/* history */
+
+.content-section{
+  width:80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+h2{
+  font-size: 40px;
+  font-weight:600 ;
+}
+
+h3{
+  font-size: 20px;
+}
+
+p{
+ font-size: 14px;
+ color:rgb(76, 76, 76);
+ font-weight: 300;
+ line-height: 22px;
+ padding: 10px;
 }
 
 
