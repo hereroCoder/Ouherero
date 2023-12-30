@@ -154,6 +154,7 @@ header .fa{
 
 .content-section{
   width:80%;
+  min-height: 100vh;
   margin: auto;
   padding-top:100px ;
   margin-top: 20px;
@@ -167,6 +168,7 @@ header .fa{
 h2{
   font-size: 40px;
   font-weight:600 ;
+  margin-bottom: 20px;
 }
 
 h3{
@@ -188,23 +190,30 @@ p{
     text-align: center;
 }
 .food-row{
-  margin-top: 5%;
   display:flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top:20px;
   gap: 20px;
 
 }
 .food-col{
-  box-shadow:3px 2px 5px gray ;
-  padding-top:10px;
-  border-radius: 5px;
+  box-shadow:4px 4px 5px gray ;
+  border-radius: 10px;
+  position: relative;
   color:white;
   box-sizing: border-box;
   width:310px;
   height:250px;
-  transition: 0.5s; 
+  transition:all ease 0.6s; 
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-position: relative;
+
+  
 }
 
 .food-col:hover{
@@ -213,64 +222,57 @@ p{
 
 .food-col h3{
   background-color:black;
-  opacity:0.8;
-  padding:4px 10px;
-  width: 70%;
-  margin: auto;
-  border-radius: 5px;
-}
-
-
-.p-food{
-  opacity: 0;
-  background: white;
-  color: black;
-  text-align: start;
-  transition: 0.8s;
-}
-.food-paragraphs{
-  opacity: 0;
-  background: white;
-  color: black;
-  text-align: start;
-  transition: 0.8s;
-
-}
-.food-col:hover .food-paragraphs {
-  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  opacity:0.7;
+  padding:10px 10px;
   width: 100%;
-  height: 100%;
+  margin: auto;
+  border-radius: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  
 }
 
-.food-col:hover .p-food{
+.overlay{
+  opacity: 0;
+  height: 100%;
+  width:100%;
+  padding: 20px 10px;
+  background: white;
+  color: black;
+  text-align: start;
+  transition: 0.8s;
+  z-index:5;
+
+}
+.food-col:hover h3{
+  display:none;
+}
+
+.food-col:hover .overlay {
   opacity: 1;
+ 
+}
+.overlay h4{
+  text-align:center;
+  color:transparent;
+  font-size: 20px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px black;
+
 }
 
 
 .butter{
   background-image: url('/images/okutuka.jpg');
-  background-position: relative;
-  background-size: cover;
-  background-origin: initial;
-  background-repeat: no-repeat;
-  object-fit: cover;
 }
 
 .meat {
   background-image: url('/images/pap+stew.jpg');
-  background-position: relative;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-origin: initial;
-  object-fit: cover;
 }
 .sour-milk{
-  background-image: url('/images/okukanda.jpg');
-  background-position: relative;
-  background-size:cover;
-  background-origin:initial;
-  background-repeat: no-repeat;
-  
+  background-image: url('/images/okukanda.jpg'); 
 }
 
 /* @media (max-width:450px){
@@ -346,7 +348,7 @@ p{
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  margin-top:5%;
+  margin-top:20px;
 }
 #scroller{
 display:inline-block;
@@ -373,6 +375,7 @@ animation-timing-function: linear;
 }
 
 .artist a{
+ 
   position: absolute;
   top:50%;
   left:50%;
@@ -394,7 +397,7 @@ animation-timing-function: linear;
 }
 #scroll img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 4px 4px 5px gray;
 }
 
@@ -476,7 +479,12 @@ animation-timing-function: linear;
   width:200px;
   border-radius: 10px;
   background-color: blue;
+  transition: all ease-out 0.8s;
 
+}
+
+.card:hover{
+  transform: rotateY(-180deg);
 }
 
 
