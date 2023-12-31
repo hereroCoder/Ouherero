@@ -10,8 +10,6 @@ function closeMenu (){
 
 //attire images
 
-
-
 function changeOldImage (){
   const oldImage = document.getElementById('old-ozonde');
   const imgsrc = oldImage.getAttribute('src');
@@ -57,6 +55,19 @@ document.getElementById('button3').addEventListener('click',changeModernImage);
 document.getElementById('button4').addEventListener('click',changeModernImage);
 
 
-
-
+//language
+function showCategory(name,yname){
+  const theCategory = document.getElementById(name)
+  const theButton= document.getElementById(yname)
+  if (theCategory.style.display === 'none'){
+      theCategory.style.display  = 'flex'
+      theButton.style.backgroundColor='#f86836'
+      theButton.style.color= 'white';
+  }
+  else{
+   theCategory.style.display  = 'none'
+   theButton.style.backgroundColor='white'
+   theButton.style.color= 'black';
+  }
+}
 

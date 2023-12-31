@@ -154,7 +154,7 @@
     
       <div class="attire-img-container">
         <button class="left-arrow" id="button1" ><i class="fa fa-chevron-left "></i></button>
-        <img src="./images/old-ozonde5.jpg" alt="herero-woman" id="old-ozonde"/>
+        <img src="./images/old-ozonde-6.jpg" alt="herero-woman" id="old-ozonde"/>
         <button class="right-arrow " id="button2"><i class="fa fa-chevron-right"></i></button>
       </div>
 
@@ -267,8 +267,14 @@
   <!-- language -->
   <section class="content-section" id="language">
     <h2>Learn Otjiherero</h2>
-    <div class="language-category">
-      <h3>Greetings</h3>
+    <div id="category-btn-container">
+      <button class="category-btn" id="greetings-btn" onclick="showCategory('greetings','greetings-btn')">Greetings</button>
+      <button class="category-btn" id="counting-btn" onclick="showCategory('counting','counting-btn')">Couting</button>
+      <button class="category-btn" id="days-btn" onclick="showCategory('days','days-btn')">Days</button>
+      <button class="category-btn" id="body-btn" onclick="showCategory('body','body-btn')">Body</button>
+    </div>
+
+    <div class="language-category" id="greetings">
       <div class="cards-container">
       
         <div class="card">
@@ -329,8 +335,8 @@
       </div>
     </div>
 
-    <div class="language-category">
-      <h3>Couting</h3>
+    <div class="language-category" id="counting">
+     
       <div class="cards-container">
       
         <div class="card">
@@ -435,8 +441,7 @@
         </div>
       </div>
     </div>
-    <div class="language-category">
-      <h3>Days of the Week</h3>
+    <div class="language-category" id="days">
       <div class="cards-container">
       
         <div class="card">
@@ -515,8 +520,7 @@
         </div>
       </div>
     </div>
-    <div class="language-category">
-      <h3>Body Parts</h3>
+    <div class="language-category" id="body">
       <div class="cards-container">
       
         <div class="card">

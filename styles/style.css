@@ -507,20 +507,28 @@ animation-timing-function: linear;
 /* learning */
 .language-category{
   margin-top: 20px;
-  
   padding:20px;
   border-radius: 10px;
 }
 .cards-container{
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  gap:20px;
-  flex-wrap: wrap;
+  /* display:flex;
+  justify-content: center; */
+  width:310px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin:auto;
+  /* align-items: center; */
+  /* gap:10px; */
+  /* flex-wrap: wrap; */
   margin-top:20px;
   /* perspective: 1000px; */
 }
+#counting,#days,#body{
+  display: none;
+}
 .card{
+  display: inline-block;
   width: 310px;
   height: 250px;
   border-radius: 10px;
@@ -549,7 +557,6 @@ align-items: center;
 text-transform: capitalize;
 }
 .cardFront{
-  color: black;
   border: 1px solid gray;
   
 }
@@ -562,7 +569,7 @@ text-transform: capitalize;
   font-size: 20px;
 }
 .cardBack {
-  background-color:#f86836;
+  background-color:rgb(20, 19, 19);
   transform: rotateX(180deg);
   opacity:0;
   transition: 0.2s;
@@ -592,6 +599,37 @@ audio::-webkit-media-controls-timeline-container{
 .card:hover .cardBack {
   opacity: 1
 }
+
+#category-btn-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+}
+
+.category-btn{
+  border-radius:10px;
+  border: none;
+  padding:20px;
+  box-shadow: 2px 2px 2px gray;
+  background-color: white;
+  display: flex;
+  width:150px;
+  height:20%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  cursor:pointer;
+}
+
+.category-btn:hover{
+  transform: scale(1.1);
+  background-color: #f86836;
+  color: white;
+}
+
+
 
 
 
