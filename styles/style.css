@@ -534,6 +534,7 @@ width: 100%;
 height: 100%;
 border-radius: 10px;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 }
@@ -545,16 +546,27 @@ align-items: center;
 .cardFront p{
   color:black;
 }
-
+.cardFront .fa{
+  color:gray;
+  font-size: 20px;
+}
 .cardBack {
   background-color:#f86836;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
   opacity:0;
   transition: 0.2s;
 }
+.cardBack audio{
+  width:40%;
+}
+
+.cardBack audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display,audio::-webkit-media-controls-timeline,audio::-webkit-media-controls-timeline-container{
+  display: none;
+
+}
 
 .card:hover{
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
   
 } 
 

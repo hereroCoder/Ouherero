@@ -16,16 +16,16 @@ function changeOldImage (){
   const oldImage = document.getElementById('old-ozonde');
   const imgsrc = oldImage.getAttribute('src');
 
-  if (imgsrc === './images/old-ozonde-green.jpg') {
-    oldImage.setAttribute('src','./images/old-ozonde-pink.jpg');
+  if (imgsrc === './images/old-ozonde-6.jpg') {
+    oldImage.setAttribute('src','./images/old-ozonde4.jpg');
   } 
 
-  else if (imgsrc === './images/old-ozonde-pink.jpg') {
-    oldImage.setAttribute('src','./images/old-ozonde3.jpg');
+  else if (imgsrc === './images/old-ozonde4.jpg') {
+    oldImage.setAttribute('src','./images/old-ozonde5.jpg');
   }
 
   else {
-    oldImage.setAttribute('src','./images/old-ozonde-green.jpg');
+    oldImage.setAttribute('src','./images/old-ozonde-6.jpg');
   } 
 
 };
