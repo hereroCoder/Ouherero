@@ -409,15 +409,24 @@ animation-timing-function: linear;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  color:black;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+  align-items: center;
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 800;
+  color:black;
+  font-size: 20px;
+  font-weight: 600;
   -webkit-text-stroke: 1px white;
   transition: 0.5s;
 
 }
+.artist a i{
+  color:#CD201F;
+}
+
 .artist a:hover{
   color:white;
   -webkit-text-stroke: 2px black;
@@ -446,9 +455,9 @@ animation-timing-function: linear;
   #scroll .artist {
       width: 80%;
     }
-    .artist a {
+    /* .artist a {
       font-size:20px;
-    }
+    } */
     #scroller{
       animation-duration: 2s;
     }
@@ -537,6 +546,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+text-transform: capitalize;
 }
 .cardFront{
   color: black;
@@ -545,6 +555,7 @@ align-items: center;
 }
 .cardFront p{
   color:black;
+  text-transform: capitalize;
 }
 .cardFront .fa{
   color:gray;
@@ -558,9 +569,13 @@ align-items: center;
 }
 .cardBack audio{
   width:40%;
+  padding-top: 5px;
+
 }
 
-.cardBack audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display,audio::-webkit-media-controls-timeline,audio::-webkit-media-controls-timeline-container{
+.cardBack audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-timeline-container{
   display: none;
 
 }
