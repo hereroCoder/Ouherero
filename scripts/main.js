@@ -9,10 +9,11 @@ function closeMenu (){
 };
 
 //attire images
-const oldImage = document.getElementById('old-ozonde');
-const modernImage = document.getElementById('modern-ozonde');
+
+
 
 function changeOldImage (){
+  const oldImage = document.getElementById('old-ozonde');
   const imgsrc = oldImage.getAttribute('src');
 
   if (imgsrc === './images/old-ozonde-green.jpg') {
@@ -20,7 +21,7 @@ function changeOldImage (){
   } 
 
   else if (imgsrc === './images/old-ozonde-pink.jpg') {
-    oldImage.setAttribute('src','./images/old-ozonde3.webp');
+    oldImage.setAttribute('src','./images/old-ozonde3.jpg');
   }
 
   else {
@@ -30,18 +31,20 @@ function changeOldImage (){
 };
 
 function changeModernImage(){
+   const modernImage = document.getElementById('modern-ozonde');
   const imgsrc = modernImage.getAttribute('src');
+ 
 
   if (imgsrc === './images/modern-ozonde-green.jpg') {
-    oldImage.setAttribute('src','./images/modern-ozonde-pink.jpg');
+    modernImage.setAttribute('src','./images/modern-ozonde-pink.jpg');
   } 
 
   else if (imgsrc === './images/modern-ozonde-pink.jpg') {
-    oldImage.setAttribute('src','./images/modern-ozonde3.webp');
+    modernImage.setAttribute('src','./images/modern-ozonde3.jpg');
   }
 
   else {
-    oldImage.setAttribute('src','./images/modern-ozonde-green.jpg');
+    modernImage.setAttribute('src','./images/modern-ozonde-green.jpg');
   } 
 
 }

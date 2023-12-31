@@ -395,8 +395,10 @@ animation-timing-function: linear;
 
 #scroll .artist{
   position: relative;
-  width:30%;
-  height: 50%;
+  /* width:30%;
+  height: 50%; */
+  width: 310px;
+  height: 250px;
   display:inline-block;
   white-space: nowrap;
   margin-right: 20px;
@@ -504,14 +506,14 @@ animation-timing-function: linear;
   display: flex;
   align-items: center;
   justify-content:center;
-  gap:10px;
+  gap:20px;
   flex-wrap: wrap;
   margin-top:20px;
   /* perspective: 1000px; */
 }
 .card{
-  height:90px;
-  width:80px;
+  width: 310px;
+  height: 250px;
   border-radius: 10px;
   background-color:transparent;
   transition: 0.8s;
