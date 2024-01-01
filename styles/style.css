@@ -759,7 +759,35 @@ audio::-webkit-media-controls-timeline-container{
   color: white;
 }
 
+footer{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+footer .fa-brands{
+  margin-right: 20px;
+  color:gray;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer .fa-brands:hover{
+  color:white;
+  transform: scale(1.5);
+}
+footer p{
+  font-size: 10px;
+  color:white;
+}
 
 
 
