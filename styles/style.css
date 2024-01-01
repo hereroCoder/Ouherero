@@ -123,8 +123,7 @@ header .fa{
     .attire-row{
       flex-direction: column;
     }
-
-
+   
   header ul {
     display: flex;
     flex-direction: column;
@@ -189,10 +188,10 @@ h3{
   font-weight: 400;
 }
 
-p{
- font-size: 14px;
- color:rgb(76, 76, 76);
- font-weight: 300;
+p,button{
+ font-size: 17px;
+ color:rgb(32, 32, 32);
+ font-weight: 250;
  line-height: 22px;
  padding: 10px;
 }
@@ -303,6 +302,7 @@ p{
   z-index:5;
 
 }
+
 .food-col:hover h3{
   display:none;
 }
@@ -340,6 +340,10 @@ p{
     .attire-row{
       flex-direction: column;
       
+    }
+
+    .history h2, #entertainment h2{
+      margin-bottom: 30px;
     }
         
 
@@ -487,7 +491,7 @@ p{
 display:inline-block;
 white-space: nowrap;
 animation-name: scroll;
-animation-duration: 20s;
+animation-duration: 40s;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
@@ -563,10 +567,10 @@ animation-timing-function: linear;
    
     /* .artist a {
       font-size:20px;
-    } */
-    #scroller{
+    /* } */
+    /* #scroller{
       animation-duration: 2s;
-    }
+    }  */
 }
 
 
@@ -611,17 +615,23 @@ animation-timing-function: linear;
 
 
 /* learning */
+#category-btn-container{
+  margin-top:30px;
+}
 .language-category{
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding:20px;
   border-radius: 10px;
+
 }
 
 
-.cards-container{
+
+/* .cards-container{
   /* display:flex;
   justify-content: center; */
   /* width:310px; */
@@ -634,12 +644,12 @@ animation-timing-function: linear;
   /* flex-wrap: wrap; */
   /* margin-top:20px; */
   /* perspective: 1000px; */
-}
+ 
 #counting,#days,#body{
   display: none;
 }
 .card{
-  display: inline-block;
+  display:inline-block;
   width:350px;
   height: 250px;
   border-radius: 10px;
@@ -651,7 +661,13 @@ animation-timing-function: linear;
   /* box-shadow: 4px 4px 5px gray; */
 
 }
+@media(max-width:900px) {
+  .card {
+      width: 250px;
+      height: 200px;}
 
+  
+}
  .language-category .slideshow-container .numbertext{
   bottom:6px;
 }
@@ -701,12 +717,13 @@ text-transform: capitalize;
   opacity:0;
   transition: 0.2s;
 }
+audio{
+  width:50%;
+}
 .cardBack audio::-webkit-media-controls-panel{
   display:flex;
   justify-content: center;
   align-items: center;
-  width:10px;
-  border:2px solid red;
 
 }
 
@@ -746,7 +763,6 @@ audio::-webkit-media-controls-timeline-container{
   background-color: white;
   display: flex;
   width:150px;
-  height:20%;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
@@ -757,6 +773,16 @@ audio::-webkit-media-controls-timeline-container{
   transform: scale(1.1);
   background-color: #f86836;
   color: white;
+}
+
+@media (max-width:900px) {
+  .category-btn {
+  border-radius: 60px;}
+
+  #category-btn-container {
+    flex-wrap: wrap;
+  }
+  
 }
 
 footer{

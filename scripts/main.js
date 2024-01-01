@@ -59,16 +59,18 @@ function closeMenu (){
 function showCategory(name,yname){
   const theCategory = document.getElementById(name)
   const theButton= document.getElementById(yname)
-  if (theCategory.style.display === 'none'){
-      theCategory.style.display  = 'flex'
-      theButton.style.backgroundColor='#f86836'
-      theButton.style.color= 'white';
-  }
-  else{
-   theCategory.style.display  = 'none'
+  if (theCategory.style.display === 'flex'){
+     theCategory.style.display  = 'none'
    theButton.style.backgroundColor='white'
    theButton.style.color= 'black';
   }
+   
+  else{
+       theCategory.style.display  = 'flex'
+      theButton.style.backgroundColor='#f86836'
+      theButton.style.color= 'white';
+  }
+  
 }
 
 
