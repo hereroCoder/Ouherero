@@ -124,7 +124,7 @@ function showSlides(n,name) {
 
 }
 
-
+// autoshowSlides()
 
 function autoshowSlides() {
   let i;
@@ -135,5 +135,5 @@ function autoshowSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(autoshowSlides, 2000); // Change image every 2 seconds
+  setTimeout(autoshowSlides, 4000); // Change image every 2 seconds
 }

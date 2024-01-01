@@ -117,6 +117,14 @@ header .fa{
   .hero h1 {
       font-size: 30px;}
 
+  .history-row{
+    flex-direction: column-reverse;
+  }
+    .attire-row{
+      flex-direction: column;
+    }
+
+
   header ul {
     display: flex;
     flex-direction: column;
@@ -150,7 +158,7 @@ header .fa{
   }
 }
 
-/* history */
+/* universal */
 
 .content-section{
   width:80%;
@@ -169,6 +177,11 @@ h2{
   font-size: 40px;
   font-weight:600 ;
   margin-bottom: 20px;
+  text-decoration:underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #f86836;
+  text-shadow: 1px 1px 1px gray;
+ 
 }
 
 h3{
@@ -185,13 +198,19 @@ p{
 }
 
 /* history */
-#history{
+.history-row{
   display:flex;
   align-items: center;
   justify-content:space-between;
 }
-#history div {
+.history-row div {
   flex: 1 1 0px;
+  transition: 0.5s;
+
+}
+
+.history-row #history-scroll:hover{
+  transform: scale(1.05);
 
 }
 /* #history-scroll{
@@ -219,9 +238,9 @@ p{
 
 /* food */
 
-.food-section{
+/* .food-section{
     text-align: center;
-}
+} */
 .food-row{
   display:flex;
   flex-wrap: wrap;
@@ -320,8 +339,9 @@ p{
   
     .attire-row{
       flex-direction: column;
-      text-align: center;
+      
     }
+        
 
 } 
 
@@ -335,22 +355,26 @@ p{
   flex: 1 1 0px;
 
 }
-.attire-row div p{
+/* .attire-row div p{
   padding:0 20px 20px 20px;
 
-}
+} */
 
 .slideshow-container {
-    max-width: 350px;
+   max-width: 550px; 
     position: relative;
     border-radius: 10px;
+   
+}
+#attire .slideshow-container{
+  background-color: black;
 }
 
 .slideshow-container img{
-  width: 100%;
-  height: 100%;
+  width:100%;
+  max-height:400px;
   border-radius: 10px;
-  object-fit: contain;
+  object-fit:contain;
 }
 
 
@@ -410,6 +434,48 @@ p{
 
 
 /* entertainment */
+
+.entertainment-row{
+ background-image: url('/images//outjina.jpg');
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+  display: flex;
+  gap:20px;
+  padding:20px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:500px;
+  border-radius:10px;
+  transition: 0.5s;
+}
+
+.entertainment-row:hover{
+  transform: scale(0.99);
+}
+.entertainment-col{
+ background-color: white;
+  width:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:30%;
+  box-shadow: 2px 2px 4px black;
+  border-radius:10px;
+  /* transform: skewY(5deg); */
+  transition: 0.5s;
+ 
+
+}
+.entertainment-col:hover{
+  transform: rotateZ(2deg);}
+
+.entertainment-col p{
+  padding:20px;
+}
+
 
  #scroll{
   white-space: nowrap;
@@ -494,9 +560,7 @@ animation-timing-function: linear;
   #scroll .artist {
       width: 80%;
     }
-  #history{
-    flex-direction: ;
-  }
+   
     /* .artist a {
       font-size:20px;
     } */
@@ -591,6 +655,18 @@ animation-timing-function: linear;
  .language-category .slideshow-container .numbertext{
   bottom:6px;
 }
+
+.language-category .prev,
+.language-category .next{
+  color:black;
+
+}
+
+.language-category .prev:hover,
+.language-category .next:hover {
+  color:white;
+
+}
 .card p{
   color:white;
   text-align: center;
@@ -625,9 +701,12 @@ text-transform: capitalize;
   opacity:0;
   transition: 0.2s;
 }
-.cardBack audio{
-  width:40%;
-  padding-top: 5px;
+.cardBack audio::-webkit-media-controls-panel{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:10px;
+  border:2px solid red;
 
 }
 
