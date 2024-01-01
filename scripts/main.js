@@ -73,13 +73,29 @@ function showCategory(name,yname){
 
 
 
-//slides
+//Attire slides
 
 let slideIndex = 1;
 let thename = 'mySlides'
 let thename2 = 'mySlides2'
 showSlides(slideIndex,thename);
 showSlides(slideIndex,thename2);
+
+// history slides
+let thename3 = 'mySlides3'
+showSlides(slideIndex,thename3);
+
+//education slides
+let thename4 = 'mySlides4';
+let thename5 = 'mySlides5';
+let thename6 = 'mySlides6';
+let thename7 = 'mySlides7';
+
+showSlides(slideIndex,thename4);
+showSlides(slideIndex,thename5);
+showSlides(slideIndex,thename6);
+showSlides(slideIndex,thename7);
+
 
 // Next/previous controls
 function plusSlides(n,name) {
@@ -91,6 +107,8 @@ function plusSlides(n,name) {
 function currentSlide(n,name) {
   showSlides(slideIndex = n,name);
 }
+
+
 
 function showSlides(n,name) {
   let i;
@@ -104,4 +122,18 @@ function showSlides(n,name) {
  
   slides[slideIndex-1].style.display = "block";
 
+}
+
+
+
+function autoshowSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides3");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(autoshowSlides, 2000); // Change image every 2 seconds
 }

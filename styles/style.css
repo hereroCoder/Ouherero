@@ -194,7 +194,7 @@ p{
   flex: 1 1 0px;
 
 }
-#history-scroll{
+/* #history-scroll{
   width:100%;
   white-space: nowrap;
   overflow-y: hidden;
@@ -205,16 +205,16 @@ p{
 #history-scroll::-webkit-scrollbar{
   display: none;
 
-}
+} */
 
 
-#history-scroll img{
+/* #history-scroll img{
   display: inline-block;
   width:100%;
   height:100%;
   border-radius:10px;
   margin-right:20px;
-}
+} */
 
 
 /* food */
@@ -341,7 +341,7 @@ p{
 }
 
 .slideshow-container {
-    max-width: 300px;
+    max-width: 350px;
     position: relative;
     border-radius: 10px;
 }
@@ -355,7 +355,7 @@ p{
 
 
 
-.mySlides,.mySlides2{
+.mySlides,.mySlides2,.mySlides3{
   display: none;
 }
 
@@ -549,21 +549,26 @@ animation-timing-function: linear;
 /* learning */
 .language-category{
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding:20px;
   border-radius: 10px;
 }
+
+
 .cards-container{
   /* display:flex;
   justify-content: center; */
-  width:310px;
-  white-space: nowrap;
+  /* width:310px; */
+  /* white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin:auto;
+  margin:auto; */
   /* align-items: center; */
   /* gap:10px; */
   /* flex-wrap: wrap; */
-  margin-top:20px;
+  /* margin-top:20px; */
   /* perspective: 1000px; */
 }
 #counting,#days,#body{
@@ -571,7 +576,7 @@ animation-timing-function: linear;
 }
 .card{
   display: inline-block;
-  width: 310px;
+  width:350px;
   height: 250px;
   border-radius: 10px;
   background-color:transparent;
@@ -581,6 +586,10 @@ animation-timing-function: linear;
   box-shadow: 2px 2px 2px 1px gray;
   /* box-shadow: 4px 4px 5px gray; */
 
+}
+
+ .language-category .slideshow-container .numbertext{
+  bottom:6px;
 }
 .card p{
   color:white;

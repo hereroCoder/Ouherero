@@ -43,7 +43,6 @@
 <!-- main -->
  <main>
 
-
   <!-- Hero -->
   <section class="section hero" id="home">
     <video autoplay muted loop plays-inline class="hero-video">
@@ -80,11 +79,39 @@
         🇧🇼, and Angola 🇦🇴.</p>
     </div>
     <div id="history-scroll">
-        <img src="./images//okuromba.jpg" alt="">
-        <img src="./images//chickens.jpeg" alt="">
-        <img src="./images/cattle.jpeg" alt="">
-        <img src="./images/old-home-cart.jpeg" alt="">
-        <img src="./images/goats.jpeg" alt="">
+        <div class="slideshow-container">
+        
+          <div class="mySlides3">
+            <div class="numbertext">1 / 5</div>
+            <img src="./images//okuromba.jpg" alt="">
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext">2 / 5</div>
+            <img src="./images//chickens.jpeg" alt="">
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext">3 / 5</div>
+              <img src="./images/cattle.jpeg" alt="">
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext">4 / 5</div>
+            <img src="./images/old-home-cart.jpeg" alt="">
+          </div>
+
+          <div class="mySlides3">
+            <div class="numbertext">5 / 5</div>
+            <img src="./images/goats.jpeg" alt="">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1,'mySlides3')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,'mySlides3')">&#10095;</a>
+
+
+        </div>
+       
     </div>
     
   </section>
@@ -148,23 +175,22 @@
 
       <div>
         <p>The women's distinctive Victorian-style dress is known as "Ozonde". Ovaherero added a distinctive horn-like
-          headscarfknown as 'otjikaiva,' typically crafted from fabric matching the dress.</p>
+          headscarf known as 'otjikaiva,' typically crafted from fabric matching the dress.</p>
         <p>This horned feature symbolizes the revered cattle, representing wealth and status within their communities.</p>
       </div>
 
       <div class="slideshow-container">
       
-        <!-- Full-width images with number and caption text -->
         <div class="mySlides">
           <div class="numbertext">1 / 2</div>
           <img src="./images/old-ozonde-6.jpg" >
-          <!-- <div class="text">Caption Text</div> -->
+         
         </div>
       
         <div class="mySlides">
           <div class="numbertext">2 / 2</div>
           <img src="./images/old-ozonde4.jpg">
-          <!-- <div class="text">Caption Three</div> -->
+          
         </div>
       
         <!-- Next and previous buttons -->
@@ -173,13 +199,10 @@
       </div>
   
     </div>
-
-
     
     <div class="attire-row">
       <div class="slideshow-container">
       
-        <!-- Full-width images with number and caption text -->
         <div class="mySlides2 fade">
           <div class="numbertext">1 / 2</div>
           <img src="./images/modern-ozonde-green.jpg">
@@ -301,265 +324,389 @@
     </div>
 
     <div class="language-category" id="greetings">
-      <div class="cards-container">
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Good Morning</p>
-            <i class="fa fa-rotate"></i>
+      <!-- <div class="cards-container"> -->
+        <div class="slideshow-container">
+        
+          <div class="mySlides4">
+            <div class="numbertext">1 / 5</div>
+            <div class="card">
+              <div class="cardFront">
+                <p>Good Morning</p>
+                <i class="fa fa-rotate"></i>
+              </div>
+              <div class="cardBack">
+                <p>Ua penduaka</p>
+                <audio src="./audios/morning.opus" controls></audio>
+              </div>
+            </div>
           </div>
-          <div class="cardBack">
-            <p>Ua penduaka</p>
-            <audio src="./audios/morning.opus" controls></audio>
+        
+        
+
+          <div class="mySlides4">
+            <div class="numbertext">2 / 5</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Good afternoon</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Wa uhara</p>
+              <audio src="./audios/afternoon.opus" controls></audio>
+            </div>
           </div>
+        
+          </div>
+
+
+          <div class="mySlides4">
+            <div class="numbertext">3 / 5</div>
+            <div class="card">
+              <div class="cardFront">
+                <p>Good evening</p>
+                <i class="fa fa-rotate"></i>
+              </div>
+              <div class="cardBack">
+                <p>Wa tokerwa</p>
+                <audio src="./audios/evening.opus" controls></audio>
+              </div>
+            </div>
+        
+          </div>
+
+            <div class="mySlides4">
+              <div class="numbertext">4 / 5</div>
+              <div class="card">
+                <div class="cardFront">
+                  <p>Hello</p>
+                  <i class="fa fa-rotate"></i>
+                </div>
+                <div class="cardBack">
+                  <p>Tjike</p>
+                  <audio src="./audios/hello.opus" controls></audio>
+                </div>
+              </div>
+            
+            </div>
+
+            <div class="mySlides4">
+              <div class="numbertext">5 / 5</div>
+              <div class="card">
+                <div class="cardFront">
+                  <p>How are you</p>
+                  <i class="fa fa-rotate"></i>
+                </div>
+                <div class="cardBack">
+                  <p>U ri nawa?</p>
+                  <audio src="./audios/how-r-u.opus" controls></audio>
+                </div>
+              </div>
+            
+            </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1,'mySlides4')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,'mySlides4')">&#10095;</a>
         </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Hello</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Tjike</p>
-            <audio src="./audios/hello.opus" controls></audio>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Good afternoon</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Wa uhara</p>
-            <audio src="./audios/afternoon.opus" controls></audio>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Good evening</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Wa tokerwa</p>
-            <audio src="./audios/evening.opus" controls></audio>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>How are you</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>U ri nawa?</p>
-            <audio src="./audios/how-r-u.opus" controls></audio>
-          </div>
-        </div>
-      
-      </div>
+      <!-- </div> -->
     </div>
 
     <div class="language-category" id="counting">
-     
-      <div class="cards-container">
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>One</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>imwe</p>
-            <audio src="./audios/one.opus" controls></audio>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Two</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>imbari</p>
-            <audio src="./audios/two.opus" controls></audio>
+      <!-- <div class="cards-container"> -->
+      <div class="slideshow-container">
+    
+        <div class="mySlides5">
+          <div class="numbertext">1 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>One</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>imwe</p>
+              <audio src="./audios/one.opus" controls></audio>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Three</p>
-            <i class="fa fa-rotate"></i>
+    
+    
+    
+        <div class="mySlides5">
+          <div class="numbertext">2 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Two</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>imbari</p>
+              <audio src="./audios/two.opus" controls></audio>
+            </div>
           </div>
-          <div class="cardBack">
-            <p>indatu</p>
-            <audio src="./audios/three.opus" controls></audio>
-          </div>
+    
         </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Four</p>
-            <i class="fa fa-rotate"></i>
+    
+    
+        <div class="mySlides5">
+          <div class="numbertext">3 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Three</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>indatu</p>
+              <audio src="./audios/three.opus" controls></audio>
+            </div>
           </div>
-          <div class="cardBack">
-            <p>ine</p>
-            <audio src="./audios/four.opus" controls></audio>
-          </div>
+    
         </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Five</p>
-            <i class="fa fa-rotate"></i>
+    
+        <div class="mySlides5">
+          <div class="numbertext">4 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Four</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>ine</p>
+              <audio src="./audios/four.opus" controls></audio>
+            </div>
           </div>
-          <div class="cardBack">
-            <p>indano</p>
-            <audio src="./audios/five.opus" controls></audio>
-          </div>
+    
         </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Six</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Hamboumwe</p>
-            <audio src="./audios/six.opus" controls></audio>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Seven</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Hambombari</p>
-            <audio src="./audios/seven.opus" controls></audio>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Eight</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Hambondatu</p>
-            <audio src="./audios/eight.opus" controls></audio>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Nine</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Imuvyu</p>
-            <audio src="./audios/nine.opus" controls></audio>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Ten</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Omurongo</p>
-            <audio src="./audios/ten.opus" controls></audio>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="language-category" id="days">
-      <div class="cards-container">
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Sunday</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Osondaha</p>
-            <audio src="./audios/sunday.opus" controls></audio>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Monday</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Omandaha</p>
-            <audio src="./audios/monday.opus" controls></audio>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Tuesday</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Oritjavari</p>
-            <audio src="./audios/tuesday.opus" controls></audio>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Wednesday</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Oritjatatu</p>
-            <audio src="./audios/wednesday.opus" controls></audio>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Thursday</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Oritjaine</p>
-            <audio src="./audios/thursday.opus" controls></audio>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Friday</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Oritjatano</p>
-            <audio src="./audios/friday.opus" controls></audio>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardFront">
-            <p>Saturday</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Oroviungura</p>
-            <audio src="./audios/saturday.opus" controls></audio>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="language-category" id="body">
-      <div class="cards-container">
-      
-        <div class="card">
-          <div class="cardFront">
-            <p>Shoulder</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Otjituve</p>
-            <audio src="./audios/shoulder.opus" controls></audio>
+    
+        <div class="mySlides5">
+          <div class="numbertext">5 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Five</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>indano</p>
+              <audio src="./audios/five.opus" controls></audio>
+            </div>
           </div>
         </div>
 
+        <div class="mySlides5">
+          <div class="numbertext">6 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Six</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Hamboumwe</p>
+              <audio src="./audios/six.opus" controls></audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides5">
+          <div class="numbertext">7 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Seven</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Hambombari</p>
+              <audio src="./audios/seven.opus" controls></audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides5">
+          <div class="numbertext">8 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Eight</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Hambondatu</p>
+              <audio src="./audios/eight.opus" controls></audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides5">
+          <div class="numbertext">9 / 10</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Nine</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Imuvyu</p>
+              <audio src="./audios/nine.opus" controls></audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides5">
+          <div class="numbertext">10 / 10</div>
+              <div class="card">
+                <div class="cardFront">
+                  <p>Ten</p>
+                  <i class="fa fa-rotate"></i>
+                </div>
+                <div class="cardBack">
+                  <p>Omurongo</p>
+                  <audio src="./audios/ten.opus" controls></audio>
+                </div>
+              </div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides5')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,'mySlides5')">&#10095;</a>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="language-category" id="days">
+      <!-- <div class="cards-container"> -->
+      <div class="slideshow-container">
+    
+        <div class="mySlides6">
+          <div class="numbertext">1 / 7</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Sunday</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Osondaha</p>
+              <audio src="./audios/sunday.opus" controls></audio>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+        <div class="mySlides6">
+          <div class="numbertext">2 / 7</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Monday</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Omandaha</p>
+              <audio src="./audios/monday.opus" controls></audio>
+            </div>
+          </div>
+    
+        </div>
+    
+    
+        <div class="mySlides6">
+          <div class="numbertext">3 / 7</div>
+              <div class="card">
+                <div class="cardFront">
+                  <p>Tuesday</p>
+                  <i class="fa fa-rotate"></i>
+                </div>
+                <div class="cardBack">
+                  <p>Oritjavari</p>
+                  <audio src="./audios/tuesday.opus" controls></audio>
+                </div>
+              </div>
+    
+        </div>
+    
+        <div class="mySlides6">
+          <div class="numbertext">4 / 7</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Wednesday</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Oritjatatu</p>
+              <audio src="./audios/wednesday.opus" controls></audio>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="mySlides6">
+          <div class="numbertext">5 / 7</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Thursday</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Oritjaine</p>
+              <audio src="./audios/thursday.opus" controls></audio>
+            </div>
+          </div>
+    
+        </div>
+
+          <div class="mySlides6">
+            <div class="numbertext">6 / 7</div>
+          <div class="card">
+            <div class="cardFront">
+              <p>Friday</p>
+              <i class="fa fa-rotate"></i>
+            </div>
+            <div class="cardBack">
+              <p>Oritjatano</p>
+              <audio src="./audios/friday.opus" controls></audio>
+            </div>
+          </div>
+          
+          </div>
+
+          <div class="mySlides6">
+            <div class="numbertext">7 / 7</div>
+            <div class="card">
+              <div class="cardFront">
+                <p>Saturday</p>
+                <i class="fa fa-rotate"></i>
+              </div>
+              <div class="cardBack">
+                <p>Oroviungura</p>
+                <audio src="./audios/saturday.opus" controls></audio>
+              </div>
+            </div>
+          
+          </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides6')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,'mySlides6')">&#10095;</a>
+      </div>
+      <!-- </div> -->
+    </div>
+<div class="language-category" id="body">
+  <!-- <div class="cards-container"> -->
+  <div class="slideshow-container">
+
+    <div class="mySlides7">
+      <div class="numbertext">1 / 12</div>
+      <div class="card">
+        <div class="cardFront">
+          <p>Shoulder</p>
+          <i class="fa fa-rotate"></i>
+        </div>
+        <div class="cardBack">
+          <p>Otjituve</p>
+          <audio src="./audios/shoulder.opus" controls></audio>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="mySlides7">
+      <div class="numbertext">2 / 12</div>
         <div class="card">
           <div class="cardFront">
             <p>Knee</p>
@@ -571,105 +718,147 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="cardFront">
-            <p>Foot</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Ombaze</p>
-            <audio src="./audios/foot.opus" controls></audio>
-          </div>
-        </div>
+    </div>
 
-        <div class="card">
-          <div class="cardFront">
-            <p>Finger</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Omunwe</p>
-            <audio src="./audios/finger.opus" controls></audio>
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="cardFront">
-            <p>chest</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Otjari</p>
-            <audio src="./audios/chest.opus" controls></audio>
-          </div>
+    <div class="mySlides7">
+      <div class="numbertext">3 / 12</div>
+      <div class="card">
+        <div class="cardFront">
+          <p>Foot</p>
+          <i class="fa fa-rotate"></i>
         </div>
-
-        <div class="card">
-          <div class="cardFront">
-            <p>Arm</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Okuoko</p>
-            <audio src="./audios/arm.opus" controls></audio>
-          </div>
+        <div class="cardBack">
+          <p>Ombaze</p>
+          <audio src="./audios/foot.opus" controls></audio>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="cardFront">
-            <p>Eyes</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Omeho</p>
-            <audio src="./audios/eyes.opus" controls></audio>
-          </div>
+    </div>
+
+    <div class="mySlides7">
+      <div class="numbertext">4 / 12</div>
+      <div class="card">
+        <div class="cardFront">
+          <p>Finger</p>
+          <i class="fa fa-rotate"></i>
         </div>
-
-        <div class="card">
-          <div class="cardFront">
-            <p>Head</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Otjiuru</p>
-            <audio src="./audios/head.opus" controls></audio>
-          </div>
+        <div class="cardBack">
+          <p>Omunwe</p>
+          <audio src="./audios/finger.opus" controls></audio>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="cardFront">
-            <p>Teeth</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Omayo</p>
-            <audio src="./audios/teeth.opus" controls></audio>
-          </div>
+    </div>
+
+    <div class="mySlides7">
+      <div class="numbertext">5 / 12</div>
+    <div class="card">
+      <div class="cardFront">
+        <p>chest</p>
+        <i class="fa fa-rotate"></i>
+      </div>
+      <div class="cardBack">
+        <p>Otjari</p>
+        <audio src="./audios/chest.opus" controls></audio>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="mySlides7">
+      <div class="numbertext">6 / 12</div>
+    <div class="card">
+      <div class="cardFront">
+        <p>Arm</p>
+        <i class="fa fa-rotate"></i>
+      </div>
+      <div class="cardBack">
+        <p>Okuoko</p>
+        <audio src="./audios/arm.opus" controls></audio>
+      </div>
+    </div>
+    
+    </div>
+
+    <div class="mySlides7">
+      <div class="numbertext">7 / 12</div>
+    <div class="card">
+      <div class="cardFront">
+        <p>Eyes</p>
+        <i class="fa fa-rotate"></i>
+      </div>
+      <div class="cardBack">
+        <p>Omeho</p>
+        <audio src="./audios/eyes.opus" controls></audio>
+      </div>
+    </div>
+    
+    </div>
+
+    <div class="mySlides7">
+      <div class="numbertext">8 / 12</div>
+      <div class="card">
+        <div class="cardFront">
+          <p>Head</p>
+          <i class="fa fa-rotate"></i>
         </div>
-
-        <div class="card">
-          <div class="cardFront">
-            <p>Ear</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Okutwi</p>
-            <audio src="./audios/ear.opus" controls></audio>
-          </div>
+        <div class="cardBack">
+          <p>Otjiuru</p>
+          <audio src="./audios/head.opus" controls></audio>
         </div>
+      </div>
+    
+    </div>
 
-        <div class="card">
-          <div class="cardFront">
-            <p>Stomach</p>
-            <i class="fa fa-rotate"></i>
-          </div>
-          <div class="cardBack">
-            <p>Ezumo</p>
-            <audio src="./audios/stomach.opus" controls></audio>
-          </div>
+    <div class="mySlides7">
+      <div class="numbertext">9 / 12</div>
+      <div class="card">
+        <div class="cardFront">
+          <p>Teeth</p>
+          <i class="fa fa-rotate"></i>
         </div>
+        <div class="cardBack">
+          <p>Omayo</p>
+          <audio src="./audios/teeth.opus" controls></audio>
+        </div>
+      </div>
+    
+    </div>
 
+    <div class="mySlides7">
+      <div class="numbertext">10 / 12</div>
+    <div class="card">
+      <div class="cardFront">
+        <p>Ear</p>
+        <i class="fa fa-rotate"></i>
+      </div>
+      <div class="cardBack">
+        <p>Okutwi</p>
+        <audio src="./audios/ear.opus" controls></audio>
+      </div>
+    </div>
+    
+    </div>
+
+
+    <div class="mySlides7">
+      <div class="numbertext">11 / 12</div>
+      <div class="card">
+        <div class="cardFront">
+          <p>Stomach</p>
+          <i class="fa fa-rotate"></i>
+        </div>
+        <div class="cardBack">
+          <p>Ezumo</p>
+          <audio src="./audios/stomach.opus" controls></audio>
+        </div>
+      </div>
+    
+    </div>
+
+      <div class="mySlides7">
+        <div class="numbertext">12 / 12</div>
         <div class="card">
           <div class="cardFront">
             <p>Legs</p>
@@ -682,8 +871,14 @@
         </div>
       
       </div>
-    </div>
-   
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1,'mySlides7')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1,'mySlides7')">&#10095;</a>
+  </div>
+ 
+  </div>
+    
   </section>
  </main>
 
