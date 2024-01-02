@@ -5,6 +5,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#f86836;
+  outline: 1px solid #f86836;
+}
+
 /* html{
   background-image: url('/images/kraaal.jpeg');
   /* background-position:inherit; */
@@ -169,7 +178,7 @@ header .fa{
   
 }
 .content-section:hover{
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 
 h2{
@@ -209,7 +218,7 @@ p,button{
 }
 
 .history-row #history-scroll:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
 
 }
 /* #history-scroll{
@@ -335,7 +344,9 @@ p,button{
 
 
  @media screen and (max-width:900px){
-
+  .content-section {
+      padding-top: 50px;
+      margin-top: 20px;}
   
     .attire-row{
       flex-direction: column;
@@ -348,6 +359,7 @@ p,button{
         
 
 } 
+
 
 /* attire */
 .attire-row{
@@ -510,6 +522,7 @@ p,button{
   overflow-x: auto;
   overflow-y: hidden;
   width:100%;
+  scrollbar-color: #0a4c95 #c2d2e4;
   /* height:35%; */
   /* position:absolute;
   bottom: 0; */
@@ -575,7 +588,15 @@ animation-timing-function: linear;
   border-radius:50%;
   box-shadow: 4px 4px 5px gray;
 }
+#scroller::-webkit-scrollbar {
+  width:5px;
+}
 
+
+#scroller::-webkit-scrollbar-thumb {
+  background-color: #f86836;
+  outline: 1px solid #f86836;
+}
 
 
 @keyframes scroll {
