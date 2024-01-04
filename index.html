@@ -4,37 +4,43 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Wame Chibamo"/>
-  <meta name="description" content="Teachs about the Ovaherero people culture and traditions. Ovaherero is an indigenous tribe in Namibia,Botswana, and Angola"/>
+  <link rel="icon" href="./images/ovaherero-favicon.png">
   <title>OvaHerero</title>
+
+  <!-- google fonts -->
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./images/ovaherero-favicon.png">
+
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- js link -->
   <script src="/scripts/main.js" defer></script>
 </head>
 <body>
-  <!-- header -->
- <header>
-  <!-- logo -->
-  <div class="logo-name">
-    <a href="#"><img src="/images/logo.png" alt="company-logo" width="50px"></a>
+  <!-- header section -->
+ <header class="header">
+    <!-- logo -->
+    <a href="#" class="logo-name">
+      <img src="/images/logo.png" alt="company-logo" width="50px">
+      <p>OvaHerero</p>
+    </a>
+
     <!-- navigation -->
-    <p>OvaHerero</p>
-  </div>
- 
-  <nav>
-      <i class="fa fa-times" onclick="closeMenu()"></i>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#history">History</a></li>
-      <li><a href="#food">Food</a></li>
-      <li><a href="#attire">Attire</a></li>
-      <li><a href="#entertainment">Entertainment</a></li>
-      <li><a href="#language">Language</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <i id="close-menu-btn" class="fa fa-times" onclick="closeMenu()"></i>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#attire">Attire</a></li>
+        <li><a href="#entertainment">Entertainment</a></li>
+        <li><a href="#language">Language</a></li>
+      </ul>
+    </nav>
 
   <i class="fa fa-bars" onclick="openMenu()"></i>
   

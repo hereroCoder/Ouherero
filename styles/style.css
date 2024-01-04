@@ -1,8 +1,21 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s linear;
+
+  /* color variables */
+  --orange: #FF6000;
+  --light-orange: #FFE6C7;
+  --black: #454545;
+  --light-color: #777;
+  --white: #fff;
+  --light-white: #eee;
 }
 
 body::-webkit-scrollbar {
@@ -10,8 +23,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color:#f86836;
-  outline: 1px solid #f86836;
+  background-color:var(--orange);
+  outline: 1px solid var(--orange);
 }
 
 /* html{
@@ -32,7 +45,7 @@ header{
   opacity: 0.8;
   padding:0.5% 5%;
   color: white;
-  position: fixed;
+  position: sticky;
   top:0;
   left:0;
   right:0;
@@ -55,7 +68,6 @@ nav ul li a{
   text-decoration: none;
   color: white;
   font-size: 17px;
-  transition:0.2s;
  
 }
 
@@ -99,7 +111,6 @@ header .fa{
 .hero h1{
   font-weight: 600;
   font-size: 80px;
-  transition: 0.5s;
 }
 
 .hero h1:hover{
@@ -145,7 +156,6 @@ header .fa{
   header .fa{
       display:block;
       cursor: pointer;
-      transition: 0.5s;
       margin:20px;
     }
   header .fa:hover{
@@ -160,9 +170,9 @@ header .fa{
     color: white;
     width:200px;
     top:0;
-    right:-200px;
+    right:-200%;
     z-index: 2;
-    transition:1s;
+    
   }
 }
 
@@ -170,15 +180,15 @@ header .fa{
 
 .content-section{
   width:80%;
-  min-height: 100vh;
+  padding-top:50px;
+  min-height: 100%;
   margin: auto;
-  padding-top:100px ;
-  margin-top: 20px;
-  transition: 1.0s;
+  /* margin-top: 20px; */
+ 
   
 }
 .content-section:hover{
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 h2{
@@ -213,7 +223,6 @@ p,button{
 }
 .history-row div {
   flex: 1 1 0px;
-  transition: 0.5s;
 
 }
 
@@ -266,7 +275,6 @@ p,button{
   box-sizing: border-box;
   width:310px;
   height:250px;
-  transition:all ease 0.6s; 
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -307,7 +315,6 @@ p,button{
   background: white;
   color: black;
   text-align: start;
-  transition: 0.8s;
   z-index:5;
 
 }
@@ -345,7 +352,6 @@ p,button{
 
  @media screen and (max-width:900px){
   .content-section {
-      padding-top: 50px;
       margin-top: 20px;}
   
     .attire-row{
@@ -411,7 +417,6 @@ p,button{
   color: white;
   font-weight: bold;
   font-size: 20px;
-  transition: 0.6s ease;
   border-radius: 0 10px 10px 0;
   user-select: none;
 }
@@ -483,7 +488,6 @@ p,button{
   /* width:100%; */
   /* height:500px; */
   border-radius:10px;
-  transition: 0.5s;
 }
 .entertainment-row div {
   flex: 1 1 0px;
@@ -505,7 +509,6 @@ p,button{
   color: black;
   text-align:start;
   border-radius: 10px;
-  transition: 0.8s;
  
 }
 .entertainment-col:hover{
@@ -569,7 +572,6 @@ animation-timing-function: linear;
   font-size: 17px;
   font-weight: 600;
   -webkit-text-stroke: 1px white;
-  transition: 0.5s;
 
 }
 .artist a i{
@@ -711,7 +713,6 @@ animation-timing-function: linear;
   height: 250px;
   border-radius: 10px;
   background-color:transparent;
-  transition: 0.8s;
   position: relative;
   cursor:pointer;
   box-shadow: 2px 2px 2px 1px gray;
@@ -772,7 +773,6 @@ text-transform: capitalize;
   background-color: rgba(0, 0, 0, 0.8);
   transform: rotateX(180deg);
   opacity:0;
-  transition: 0.2s;
 }
 audio{
   width:50%;
@@ -822,7 +822,6 @@ audio::-webkit-media-controls-timeline-container{
   width:150px;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
   cursor:pointer;
 }
 
@@ -861,7 +860,6 @@ footer .fa-brands{
   color:gray;
   font-size: 20px;
   cursor: pointer;
-  transition: 0.5s;
 }
 footer .fa-brands:hover{
   color:white;
