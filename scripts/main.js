@@ -2,7 +2,7 @@
 // toggle menu
 function openMenu (){
   document.querySelector('nav').style.right = "0";
-  document.querySelector('nav').style.boxShadow="0 0 0 100vw rgba(0,0,0,0.3)"
+  // document.querySelector('nav').style.boxShadow="0 0 0 100vw rgba(0,0,0,0.3)"
 };
 
 function closeMenu (){
