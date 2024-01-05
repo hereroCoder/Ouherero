@@ -813,13 +813,10 @@ footer p{
     z-index: 10;
 
   }
-  .history-row {
-    flex-direction: column-reverse;
+  .content-section {
+    padding-top: 6rem;
   }
-
-  .attire-row {
-    flex-direction: column;
-  }
+ 
 
   .category-btn {
     border-radius: 60px;
@@ -836,44 +833,3 @@ footer p{
         font-size:3.5rem;
   }
 }
-
-
-
-/* @media(max-width:900px) {
-  .card {
-    width: 250px;
-    height: 200px;
-  }
-}
-
-@media(max-width:700px) {
-  #scroll .artist {
-    width: 80%;
-  }
-
-  .entertainment-row {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .entertainment-col {
-    width: 100%;
-
-  }
-}
-
- @media screen and (max-width:900px) {
-  
-
-   .attire-row {
-     flex-direction: column;
-
-   }
-
-   .history h2,
-   #entertainment h2 {
-     margin-bottom: 30px;
-   }
-
-
- } */
