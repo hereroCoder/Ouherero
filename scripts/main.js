@@ -61,9 +61,9 @@ function showCategory(name,yname){
   const theCategory = document.getElementById(name)
   const theButton= document.getElementById(yname)
   if (theCategory.style.display === 'flex'){
-     theCategory.style.display  = 'none'
-   theButton.style.backgroundColor='white'
-   theButton.style.color= 'black';
+    theCategory.style.display  = 'none'
+    theButton.style.backgroundColor='white'
+    theButton.style.color= 'black';
   }
    
   else{
@@ -140,3 +140,4 @@ function autoshowSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(autoshowSlides, 4000); // Change image every 2 seconds
 }
+
