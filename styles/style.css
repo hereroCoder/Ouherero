@@ -698,27 +698,16 @@ footer p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries */
 @media (max-width:1200px) {
-   .header{
-    padding: 0.5% 5%;
-  } 
+ 
 
   .content-section{
     width:90%;
     padding-top: 4rem;
+  }
+  .header {
+    padding: 0.5% 5%;
   }
 
 }
@@ -730,11 +719,6 @@ footer p{
   .hero h1 {
     font-size: 6rem;
   }
-
-  /* .header{
-    padding:0.5% 5%;
-  } */
-/* //endeded here */
 
 }
 
