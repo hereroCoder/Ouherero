@@ -23,7 +23,7 @@ function showCategory(name,yname){
   }
    
   else{
-       theCategory.style.display  = 'flex'
+      theCategory.style.display  = 'flex'
       theButton.style.backgroundColor='#f86836'
       theButton.style.color= 'white';
   }
