@@ -4,7 +4,7 @@
 
 Welcome to the **Ovaherero Culture Showcase**! 🌍 
 
-This digital hub invites you on an immersive journey delving deep into the vibrant heritage of the Ovaherero people. Here, we celebrate the essence of their culture, traditions, and history, offering a unique and enlightening exploration into a world rich in diversity and tradition.
+This digital hub invites you on an immersive journey delving deep into the vibrant heritage of the Ovaherero people. Here, we celebrate the essence of their culture, traditions, and history.
 
 The Ovaherero community is known for its deep-rooted traditions, captivating stories, and remarkable resilience through history. This website serves as a tribute to their legacy, aiming to preserve and share their invaluable heritage with the world.
 
