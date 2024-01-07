@@ -4,7 +4,7 @@
 
 Welcome to the **Ovaherero Culture Showcase**! 🌍 
 
-This digital hub invites you on an immersive journey delving deep into the vibrant heritage of the Ovaherero people. Here, we celebrate the essence of their culture, traditions, and history.
+This website invites you on an immersive journey delving deep into the vibrant heritage of the Ovaherero people. Here, we celebrate the essence of their culture, traditions, and history.
 
 The Ovaherero community is known for its deep-rooted traditions, captivating stories, and remarkable resilience through history. This website serves as a tribute to their legacy, aiming to preserve and share their invaluable heritage with the world.
 
@@ -24,11 +24,11 @@ The Ovaherero community is known for its deep-rooted traditions, captivating sto
 
 ### Engage with:
 
-- 🖼️ **User-Centric Design:** Intuitive navigation and layout.
+- Intuitive navigation and layout.
   
-- 🚀 **Interactive Elements:** Engaging components for an immersive experience.
+- Engaging components for an immersive experience.
 
-- 📚 **Educational Resources:** Language learning with recorded clips for pronunciation (*Note: Voice recordings by the developer.*).
+- Language learning with recorded clips for pronunciation (*Note: Voice recordings by the developer.*).
 
 ## Technologies Used
 
