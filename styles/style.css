@@ -460,12 +460,12 @@ nav ul li a:hover{
   width: 40rem;
   white-space: nowrap;
   margin-right: 2rem;
-display:inline-block;
-cursor:pointer;
-animation-name: roll;
-animation-duration: 40s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
+  display:inline-block;
+  cursor:pointer;
+  animation-name: roll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 
