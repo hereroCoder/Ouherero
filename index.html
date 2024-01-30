@@ -21,24 +21,24 @@
 </head>
 <body>
   <!-- header section -->
- <header class="header">
+ <header class="header" id="header">
     <!-- logo -->
-    <a href="#" class="logo-name">
+   
+    <a href="#" class="logo-name" id="logo">
       <img src="images/logo.png" alt="company-logo" width="40rem">
       <p>OvaHerero</p>
     </a>
-
     <!-- navigation -->
     <nav>
         <i id="close-menu-btn" class="fa fa-times" onclick="closeMenu()"></i>
 
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#food">Food</a></li>
-        <li><a href="#attire">Attire</a></li>
-        <li><a href="#entertainment">Entertainment</a></li>
-        <li><a href="#language">Language</a></li>
+        <li><a href="#home" class="navlink">Home</a></li>
+        <li><a href="#history" class="navlink">History</a></li>
+        <li><a href="#food" class="navlink">Food</a></li>
+        <li><a href="#attire" class="navlink">Attire</a></li>
+        <li><a href="#entertainment" class="navlink">Entertainment</a></li>
+        <li><a href="#language" class="navlink">Language</a></li>
       </ul>
     </nav>
 
@@ -66,7 +66,7 @@
 
 <!-- history -->
   <section class="content-section history" id="history">
-    <h2>History</h2>
+    <h2><img src="/images/bookmark.png" alt="" width="35rem"> History</h2>
     <div class="history-row">
 
       <div id="history-scroll">
@@ -150,7 +150,7 @@
   <!-- food -->
 
   <section  class="content-section food-section" id="food">
-    <h2>Food</h2>
+    <h2><img src="/images/bookmark.png" alt="" width="35rem"> Food</h2>
 
     <p>The Herero rely on their livestock for the majority of their food. These animals provide crucial nourishment through their meat and milk. They ensure the full utilization of slaughtered
     animals. The skin is repurposed into mats, while the tail serves various traditional functions,
@@ -158,7 +158,7 @@
     <div class="food-row">
       <div class="food-col meat">
           
-          <h3 class='food-title'>Meat</h3>
+          <!-- <h3 class='food-title'>Meat</h3> -->
           <div class="overlay">
             <h3>Meat</h3>
             <p>
@@ -169,7 +169,7 @@
          
       </div>
       <div class="food-col sour-milk" > 
-          <h3 class='food-title'>Sour Milk</h3>
+          <!-- <h3 class='food-title'>Sour Milk</h3> -->
           <div class="overlay">
             <h3>Sour Milk</h3>
             <p>
@@ -180,9 +180,9 @@
       </div>
 
       <div class="food-col butter"> 
-        <h3 class='food-title'>Butter</h3>
+        <!-- <h3 class='food-title'>Butter</h3> -->
         <div class="overlay">
-          <h3>Traditional Butter</h3>
+          <h3> Traditional Butter</h3>
           <p>
             Herero make their own butter. It is made by shaking milk in a container called ondjupa.
           </p>
@@ -201,37 +201,26 @@
 
   <!-- Attire -->
   <section class="content-section" id="attire">
-    <h2>Attire</h2>
+    <h2><img src="/images/bookmark.png" alt="" width="35rem"> Attire</h2>
     <div class="attire-row">
   
-      <div>
-        <p>The women's distinctive Victorian-style dress is known as "Ozonde".Ovaherero added a distinctive horn-like headscarf known as "Otjikaiva"</p>
-        
-
-        <div class="hide1">
-            <p>Otjikaiva is typically crafted from fabric matching the dress.
-            This horned feature symbolizes the revered cattle, representing wealth and status within their communities.</p>
-        </div>
-
-        <button class="read-more-btn1">Read more</button>
-      
+      <div class="attire-content">
+        <p>The women's distinctive Victorian-style dress is known as "Ozonde".Ovaherero added a distinctive horn-like headscarf known as "Otjikaiva".</p>
+        <p>Otjikaiva is typically crafted from fabric matching the dress. This horned feature symbolizes the revered cattle, representing wealth and status within their communities.</p>
       </div>
   
       <div class="slideshow-container">
   
         <div class="old-ozonde-slides">
           <img src="images/old-ozonde-6.jpg">
-  
         </div>
   
         <div class="old-ozonde-slides">
           <img src="images/old-dress2.jpg">
-  
         </div>
   
-  
-        <a class="prev" onclick="plusSlides(-1,'old-ozonde-slides')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1,'old-ozonde-slides')">&#10095;</a>
+        <!-- <a class="prev" onclick="plusSlides(-1,'old-ozonde-slides')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,'old-ozonde-slides')">&#10095;</a> -->
       </div>
   
     </div>
@@ -246,21 +235,14 @@
         <div class="new-Ozonde-slides">
           <img src="images/modern-ozonde-pink.jpg">
         </div>
-  
-        
-        <a class="prev" onclick="plusSlides(-1,'new-Ozonde-slides')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1,'new-Ozonde-slides')">&#10095;</a>
+        <!-- <a class="prev" onclick="plusSlides(-1,'new-Ozonde-slides')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,'new-Ozonde-slides')">&#10095;</a> -->
       </div>
   
-      <div>
+      <div class="attire-content">
         <p>Over time, the dress patterns have evolved, and the otjikaiva has taken on a more defined shape.</p>
-       
-        <div class="hide2">
-          <p> These dresses have become a canvas for vibrant colors and incorporate various modern patterns, showcasing the
+        <p> These dresses have become a canvas for vibrant colors and incorporate various modern patterns, showcasing the
             Ovaherero's adaptation to contemporary influences while preserving their cultural identity.</p>
-
-        </div>
-        <button  class="read-more-btn2">Read more</button>
        
       </div>
   
@@ -271,7 +253,7 @@
 
   <!-- Entertainment -->
   <section class="content-section" id="entertainment">
-    <h2>Entertainment</h2>
+    <h2><img src="/images/bookmark.png" alt="" width="35rem"> Entertainment</h2>
     <!-- <div class="entertainment-text">
     
       <p> Starting without instruments, the Oviritje music now involves
@@ -299,7 +281,7 @@
     </div>
    
    
-   <h3>Oviritje</h3>
+   <h3><img src="/images/bookmark.png" alt="" width="35rem"> Oviritje Music</h3>
     <p>Oviritje music, while initially performed without
         instruments, today, keyboardists, producers, and both male and female artists contribute to this genre. Scroll below
         to see and listen to the music.</p>
@@ -369,7 +351,7 @@
 
   <!-- language -->
   <section class="content-section" id="language">
-    <h2>Learn Otjiherero</h2>
+    <h2><img src="/images/bookmark.png" alt="" width="35rem"> Learn Otjiherero</h2>
     <div id="category-btn-container">
       <button class="category-btn" id="greetings-btn" onclick="showCategory('greetings','greetings-btn')">Greetings</button>
       <button class="category-btn" id="counting-btn" onclick="showCategory('counting','counting-btn')">Couting</button>
