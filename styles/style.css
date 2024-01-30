@@ -429,12 +429,24 @@ nav ul li a:hover{
  
 }
 
+.oviritje-row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:5rem;
+ 
+}
+
+.oviritje-text{
+  margin: auto;
+}
+
 
  #scroller{
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   width:100%;
+  margin: auto;
   text-align: center;
 }
 
